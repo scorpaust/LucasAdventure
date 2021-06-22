@@ -8,6 +8,8 @@ public class PlayerAnimation : MonoBehaviour
 
 	private SpriteRenderer sr;
 
+	private GameObject player;
+
 	private void Awake()
 	{
 		anim = GetComponent<Animator>();
@@ -24,12 +26,22 @@ public class PlayerAnimation : MonoBehaviour
 	{
 		if (direction > 0)
 		{
-			sr.flipX = false;
+			transform.localScale = new Vector3(1f, 1f, 1f);
 		}
 
 		else if (direction < 0)
 		{
-			sr.flipX = true;
+			transform.localScale = new Vector3(-1f, 1f, 1f);
 		}
+	}
+
+	public void PlayJumpAndFall(int jumpFall)
+	{
+		anim.SetInteger(TagManager.JUMP_ANIMATION_PARAM, jumpFall);
+	}
+
+	public void PlayAnimationWithName(string animName)
+	{
+		anim.Play(animName);
 	}
 }
