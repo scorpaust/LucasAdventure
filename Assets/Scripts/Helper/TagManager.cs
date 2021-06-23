@@ -13,4 +13,6 @@
     public static string WALK_ANIMATION = "Walk";
 
     public static string PLAYER_TAG = "Player";
+
+    public static string DANGER_TAG = "Danger";
 }
