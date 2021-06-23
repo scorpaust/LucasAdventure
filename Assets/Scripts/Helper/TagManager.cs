@@ -11,4 +11,6 @@
     public static string IDLE_ANIMATION = "Idle";
 
     public static string WALK_ANIMATION = "Walk";
+
+    public static string PLAYER_TAG = "Player";
 }

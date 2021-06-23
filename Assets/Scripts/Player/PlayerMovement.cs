@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
 		CheckToDoubleJump();
 
 		FromJumpToWalkOrIdle();
+
 	}
 
 	private void FixedUpdate()

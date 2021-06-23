@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1092586100253408534}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2049864385
+  m_SortingLayer: 8
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 774927fb1ef457e4ca099e5465fa1e2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -118,8 +118,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5799523, y: -0.60225093}
-  m_Size: {x: 1.1074792, y: 1.8786032}
+  m_Offset: {x: -0.43395096, y: -0.45625007}
+  m_Size: {x: 0.81547654, y: 1.5136006}
   m_Direction: 0
 --- !u!50 &5170734785860316739
 Rigidbody2D:
@@ -131,9 +131,9 @@ Rigidbody2D:
   m_GameObject: {fileID: 5170734785860316748}
   m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 1
+  m_Mass: 1.0915952
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
