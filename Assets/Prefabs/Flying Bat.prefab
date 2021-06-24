@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8850480838112882113}
   m_Layer: 0
   m_Name: Flying Bat
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,3 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e6ae1ee664499428535ab429ea60a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minX: -8.3
+  maxX: 8.3
+  minY: -4.5
+  maxY: 4.5
+  moveSpeed: 2
