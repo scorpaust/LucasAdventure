@@ -13,6 +13,8 @@ public class RotateObstacle : MonoBehaviour
 	[SerializeField]
 	private LayerMask groundLayer;
 
+	private CircleCollider2D col;
+
 	private Vector3 tempPos;
 
 	private float zAngle;
@@ -20,6 +22,11 @@ public class RotateObstacle : MonoBehaviour
 	private bool moveLeft;
 
 	private RaycastHit2D groundHit;
+
+	private void Awake()
+	{
+		col = GetComponent<CircleCollider2D>();
+	}
 
 	private void Start()
 	{
@@ -57,7 +64,7 @@ public class RotateObstacle : MonoBehaviour
 	private void CheckForGround()
 	{
 		groundHit = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, groundLayer);
-		
+
 		if (!groundHit)
 		{
 			moveLeft = !moveLeft;
@@ -78,5 +85,13 @@ public class RotateObstacle : MonoBehaviour
 		
 
 		transform.rotation = Quaternion.AngleAxis(zAngle, Vector3.forward);
+	}
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag(TagManager.PLAYER_TAG))
+		{
+
+		}
 	}
 }
